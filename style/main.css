@@ -1,0 +1,160 @@
+:root{
+    --Pale_blue: hsl(225, 100%, 94%);
+    --Bright_blue: hsl(245, 75%, 52%);
+    --Very_pale_blue: hsl(225, 100%, 98%);
+    --Desaturated_blue: hsl(224, 23%, 55%);
+    --Dark_blue: hsl(223, 47%, 23%);
+}
+
+*{
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: var(--Bright_blue);
+}
+
+a:hover{
+    color: hsl(245, 83%, 68%)
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-gray{
+    color: gray;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: min-content;
+    border-radius: 1em;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.400);
+    background: white;
+}
+
+.card .card-header img{
+    border-radius: 1em 1em 0 0;
+}
+
+.card .card-body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 3em;
+    padding-bottom: 1em;
+}
+.card .card-body h1{
+    margin: 1em 0;
+}
+
+.card .card-body > p{
+    margin-bottom: 1.5em;
+}
+
+.card .card-body .product{
+    display: grid;
+    grid-template-columns: 17% 60% 20%;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.7em;
+}
+
+
+.btn{
+    outline: none;
+    border: none;
+    border-radius: 1em;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+    margin: .5em;
+    cursor: pointer;
+}
+
+.btn-payment{
+    background: var(--Bright_blue);
+    color: white;
+}
+
+.btn-payment:hover{
+    background: hsl(245, 83%, 68%);
+    color: white;
+}
+
+.btn-cancel{
+    background: white;
+}
+
+.btn-cancel:hover{
+    color: black;
+}
+
+
+@media (max-width: 440px) {
+    .container{
+        display: block;
+        padding: 1em .5em;
+    }
+    .card {
+        max-width: max-content;
+        border-radius: 1em;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.400);
+        background: white;
+    }
+    
+    .card .card-header img{
+        width: 100%;
+        border-radius: 1em 1em 0 0;
+    }
+    
+    .card .card-body{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1em;
+        padding-bottom: 1em;
+    }
+    .card .card-body h1{
+        margin: 1em 0;
+    }
+    
+    .card .card-body > p{
+        padding: 0 2em;
+        margin-bottom: 1.5em;
+    }
+    
+    .card .card-body .product{
+        display: grid;
+        grid-template-columns: 23% 50% 20%;
+        align-items: center;
+        width: 100%;
+        padding: 0 2em;
+        margin: 2em 0;
+    }
+}
